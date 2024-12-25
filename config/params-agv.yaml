@@ -39,11 +39,17 @@ lio_sam:
   imuRPYWeight: 0.01
 
   # Extrinsics: T_lb (lidar -> imu)
-  extrinsicTrans: [0.08, 0.0, 0.1125]
+  # 运行 rosrun tf tf_echo imu_link velodyne  获取
+  #   At time 0.000
+  # - Translation: [0.080, 0.000, 0.325]
+  # - Rotation: in Quaternion [0.000, 0.000, 0.000, 1.000]
+  #             in RPY (radian) [0.000, -0.000, 0.000]
+  #             in RPY (degree) [0.000, -0.000, 0.000]
+  extrinsicTrans: [0.08, 0.0, 0.325]
   extrinsicRot: [1, 0, 0,
                   0, 1, 0,
                   0, 0, 1]
-  extrinsicRPY: [0, 0, 0,
+  extrinsicRPY: [0, -0, 0,
                  0, 0, 0,
                  0, 0, 0]
   # extrinsicRot: [1, 0, 0,
