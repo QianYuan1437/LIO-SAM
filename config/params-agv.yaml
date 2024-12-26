@@ -3,7 +3,7 @@ lio_sam:
   # Topics
   pointCloudTopic: "velodyne_points"               # Point cloud data
   imuTopic: "imu"                         # IMU data
-  odomTopic: "odom"                   # IMU pre-preintegration odometry, same frequency as IMU
+  odomTopic: "odometry/imu"                   # IMU pre-preintegration odometry, same frequency as IMU
   gpsTopic: ""                   # GPS odometry topic from navsat, see module_navsat.launch file
 
   # Frames
@@ -49,7 +49,7 @@ lio_sam:
   extrinsicRot: [1, 0, 0,
                   0, 1, 0,
                   0, 0, 1]
-  extrinsicRPY: [0, -0, 0,
+  extrinsicRPY: [0, 0, 0,
                  0, 0, 0,
                  0, 0, 0]
   # extrinsicRot: [1, 0, 0,
