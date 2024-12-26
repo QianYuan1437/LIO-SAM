@@ -11,6 +11,11 @@
     <!--- Robot State TF -->
     <include file="$(find lio_sam)/launch/include/module_robot_state_publisher.launch" />
 
+    <!-- 启动 imu_process 节点 -->
+    <!-- <node name="imu_process" pkg="robot_description" type="imu_process" output="screen" /> -->
+    <!-- 使用 imu_process.launch 启动 imu_process 节点 -->
+    <include file="$(find robot_description)/launch/imu_process.launch" />
+
     <!--- Run Navsat -->
     <include file="$(find lio_sam)/launch/include/module_navsat.launch" />
 

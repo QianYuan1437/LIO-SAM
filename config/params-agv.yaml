@@ -2,7 +2,7 @@ lio_sam:
 
   # Topics
   pointCloudTopic: "velodyne_points"               # Point cloud data
-  imuTopic: "imu"                         # IMU data
+  imuTopic: "imu_quat"                         # IMU data
   odomTopic: "odometry/imu"                   # IMU pre-preintegration odometry, same frequency as IMU
   gpsTopic: ""                   # GPS odometry topic from navsat, see module_navsat.launch file
 
@@ -45,13 +45,13 @@ lio_sam:
   # - Rotation: in Quaternion [0.000, 0.000, 0.000, 1.000]
   #             in RPY (radian) [0.000, -0.000, 0.000]
   #             in RPY (degree) [0.000, -0.000, 0.000]
-  extrinsicTrans: [0.08, 0.0, 0.325]
-  extrinsicRot: [1, 0, 0,
-                  0, 1, 0,
-                  0, 0, 1]
-  extrinsicRPY: [0, 0, 0,
-                 0, 0, 0,
-                 0, 0, 0]
+  extrinsicTrans: [0, 0, 0]
+  extrinsicRot: [0.909884, -0.270347, 0.314679,
+                  -0.270347, 0.188959, 0.944038,
+                  0.314679, 0.944038, 0.0988438]
+  extrinsicRPY: [0.909884, -0.270347, 0.314679,
+                    -0.270347, 0.188959, 0.944038,
+                    0.314679, 0.944038, 0.0988438]
   # extrinsicRot: [1, 0, 0,
   #                 0, 1, 0,
   #                 0, 0, 1]
