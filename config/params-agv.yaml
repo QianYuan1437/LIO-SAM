@@ -31,12 +31,12 @@ lio_sam:
   lidarMaxRange: 1000.0                       # default: 1000.0, maximum lidar range to be used
 
   # IMU Settings
-  imuAccNoise: 3.9939570888238808e-03
-  imuGyrNoise: 1.5636343949698187e-03
-  imuAccBiasN: 6.4356659353532566e-05
-  imuGyrBiasN: 3.5640318696367613e-05
+  imuAccNoise: 9.4541565429436137e-03
+  imuGyrNoise: 1.0119486292031934e-03
+  imuAccBiasN: 4.2407717276972825e-05
+  imuGyrBiasN: 7.1945086578740572e-05
   imuGravity: 9.80511
-  imuRPYWeight: 0.01
+  imuRPYWeight: 0.00
 
   # Extrinsics: T_lb (lidar -> imu)
   # 运行 rosrun tf tf_echo imu_link velodyne  获取
